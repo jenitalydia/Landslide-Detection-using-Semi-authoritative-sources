@@ -63,8 +63,6 @@ def main():
                 continue
             #pdb.set_trace()
             status.user.id = str(status.user.id)
-            #if status.user.id == "241223988":
-                #pdb.set_trace()
             if status.user.id in dict1:
                 counter += 1
                 with open("counter_file.json", 'w') as c:

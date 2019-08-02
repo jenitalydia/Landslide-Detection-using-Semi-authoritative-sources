@@ -4,7 +4,6 @@ arr= []
 
 for subdir, dirs, files in os.walk('/Users/jenita/PycharmProjects/TweetFinder/news_tweets_2018'):
     for file in files:
-        #print os.path.join(subdir, file)
         filepath = subdir + os.sep + file
 
         if filepath.endswith(".json"):

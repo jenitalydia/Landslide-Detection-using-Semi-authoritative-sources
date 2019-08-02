@@ -2,15 +2,13 @@ import pdb
 import pandas as pd
 import json
 
-# TRAIN_SET_PATH = "20ng-no-stop.txt"
-# TRAIN_SET_PATH = "r52-all-terms.txt"
 TRAIN_SET_PATH = "apriori_data.json"
 TEST_SET_DATA = {}
 
 
 
 def bow_generate(source_data):
-    #    #we use the bow file in train_src to create our vocabulary
+    #we use the bow file in train_src to create our vocabulary
     from sklearn.feature_extraction.text import TfidfVectorizer
     bow_file = 'bow.txt'
     with open(bow_file, 'r') as bow_file:
